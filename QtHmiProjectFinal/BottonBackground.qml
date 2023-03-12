@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.12
-import QtQuick.Timeline 1.0
+//import QtQuick.Timeline 1.0
 
 
 Item{
@@ -73,82 +73,82 @@ Item{
                 font.pixelSize: 32
                 font.family: "Cherry"
 
-                Timeline {
-                    id: timeline3
-                    animations: [
-                        TimelineAnimation {
-                            id: route3
-                            to: 10000
-                            duration: 10000
-                            running: true
-                            loops: -1
-                            from: 0
-                        }
-                    ]
-                    startFrame: 0
-                    enabled: true
-                    endFrame: 10000
+//                Timeline {
+//                    id: timeline3
+//                    animations: [
+//                        TimelineAnimation {
+//                            id: route3
+//                            to: 10000
+//                            duration: 10000
+//                            running: true
+//                            loops: -1
+//                            from: 0
+//                        }
+//                    ]
+//                    startFrame: 0
+//                    enabled: true
+//                    endFrame: 10000
 
-                    KeyframeGroup {
-                        target: odometerNumber
-                        property: "text"
+//                    KeyframeGroup {
+//                        target: odometerNumber
+//                        property: "text"
 
-                        Keyframe {
-                            value: 0
-                            frame: 0
-                        }
+//                        Keyframe {
+//                            value: 0
+//                            frame: 0
+//                        }
 
-                        Keyframe {
-                            value: 111111
-                            frame: 1000
-                        }
+//                        Keyframe {
+//                            value: 111111
+//                            frame: 1000
+//                        }
 
-                        Keyframe {
-                            value: 222222
-                            frame: 2000
-                        }
+//                        Keyframe {
+//                            value: 222222
+//                            frame: 2000
+//                        }
 
-                        Keyframe {
-                            value: 333333
-                            frame: 3000
-                        }
+//                        Keyframe {
+//                            value: 333333
+//                            frame: 3000
+//                        }
 
-                        Keyframe {
-                            value: 444444
-                            frame: 4000
-                        }
+//                        Keyframe {
+//                            value: 444444
+//                            frame: 4000
+//                        }
 
-                        Keyframe {
-                            value: 555555
-                            frame: 5000
-                        }
+//                        Keyframe {
+//                            value: 555555
+//                            frame: 5000
+//                        }
 
-                        Keyframe {
-                            value: 666666
-                            frame: 6000
-                        }
+//                        Keyframe {
+//                            value: 666666
+//                            frame: 6000
+//                        }
 
-                        Keyframe {
-                            value: 777777
-                            frame: 7000
-                        }
+//                        Keyframe {
+//                            value: 777777
+//                            frame: 7000
+//                        }
 
-                        Keyframe {
-                            value: 888888
-                            frame: 8000
-                        }
+//                        Keyframe {
+//                            value: 888888
+//                            frame: 8000
+//                        }
 
-                        Keyframe {
-                            value: 999999
-                            frame: 9000
-                        }
+//                        Keyframe {
+//                            value: 999999
+//                            frame: 9000
+//                        }
 
-                        Keyframe {
-                            value: 999999
-                            frame: 10000
-                        }
-                    }
-                }
+//                        Keyframe {
+//                            value: 999999
+//                            frame: 10000
+//                        }
+//                    }
+//                }
 
             }
         }
