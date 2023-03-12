@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/bike-rearwheel.png</file>
+        <file>images/calories.png</file>
+        <file>images/info.png</file>
+        <file>images/lights_off.png</file>
+        <file>images/lights_on.png</file>
+        <file>images/list.png</file>
+        <file>images/settings.png</file>
+        <file>images/top_curtain_drag.png</file>
+        <file>images/top_curtain_drag_back.png</file>
+        <file>images/trip.png</file>
+    </qresource>
+</RCC>
