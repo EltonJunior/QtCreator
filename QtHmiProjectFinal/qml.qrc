@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/arrow-left-main.png</file>
+        <file>images/arrow-right-main.png</file>
+        <file>images/background.png</file>
+        <file>images/battery.png</file>
+        <file>images/bike-rearwheel.png</file>
+        <file>images/bike-rearwheel-main.png</file>
+        <file>images/bike-red-wheel.png</file>
+        <file>images/blue_circle_gps_area.png</file>
+        <file>images/botton-background.png</file>
+        <file>images/bottonBikeMain.png</file>
+        <file>images/google_map.png</file>
+        <file>images/google_map_ref.png</file>
+        <file>images/info.png</file>
+        <file>images/left-arc-main.png</file>
+        <file>images/lights_off.png</file>
+        <file>images/lights_on.png</file>
+        <file>images/list.png</file>
+        <file>images/main_screen.png</file>
+        <file>images/map_in_gif.gif</file>
+        <file>images/map_location_arrow.png</file>
+        <file>images/map_screen.png</file>
+        <file>images/map01.png</file>
+        <file>images/nav_nodir.png</file>
+        <file>images/no-nav-nodir.png</file>
+        <file>images/right-arc-main.png</file>
+        <file>images/settings.png</file>
+        <file>images/speed.png</file>
+        <file>images/top_curtain_drag.png</file>
+        <file>images/top_curtain_drag_back.png</file>
+        <file>BikeImage.qml</file>
+        <file>BottonBackground.qml</file>
+        <file>MainBackground.qml</file>
+        <file>ScreenMoving.qml</file>
+        <file>MapScreen.qml</file>
+    </qresource>
+</RCC>
