@@ -19,6 +19,7 @@ Window {
 //    flags: Qt.FramelessWindowHint | Qt.Window
 //    color: "black"
 //    visibility: Qt.WindowFullScreen // << the solution
+
 }
 
 /*##^##
