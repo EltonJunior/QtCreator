@@ -37,9 +37,9 @@ Item{
             onClicked:{
             parent.isActive = !parent.isActive
             if(parent.isActive)
-                output.pinHigh();
-            else
                 output.pinLow();
+            else
+                output.pinHigh();
 
                 }
             }
