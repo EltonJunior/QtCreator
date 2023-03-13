@@ -48,7 +48,7 @@ Window {
 
             visible: true
             property bool isActive: false
-            source: isActive ? "qrc:/images/led-on.png" : "qrc:/images/led-off.png"
+            source: isActive ? "qrc:/images/led-off.png" : "qrc:/images/led-on.png"
 
             MouseArea {
                 id: mouseArea

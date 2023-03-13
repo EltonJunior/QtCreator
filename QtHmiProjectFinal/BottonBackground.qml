@@ -35,9 +35,14 @@ Item{
             id: mouseArea
             anchors.fill: parent
             onClicked:{
-                parent.isActive = !parent.isActive
-                    }
+            parent.isActive = !parent.isActive
+            if(parent.isActive)
+                output.pinHigh();
+            else
+                output.pinLow();
+
                 }
+            }
     }
 
 

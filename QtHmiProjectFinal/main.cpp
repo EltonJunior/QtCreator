@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QTimeLine>
+#include <QQmlContext>
+#include "gpio.h"
 
 int main(int argc, char *argv[])
 {
@@ -9,8 +11,13 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
-
     QQmlApplicationEngine engine;
+
+    Gpio gpio15(15, GPIO_OUTPUT);
+
+    QQmlContext* ctx = engine.rootContext();
+    ctx->setContextProperty("output", &gpio15);
+
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
