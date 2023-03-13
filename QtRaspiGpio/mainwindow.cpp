@@ -20,7 +20,7 @@ void MainWindow::on_pushButton_clicked()
 {
     FILE *sysfs_handle = NULL;
 
-    if( (sysfs_handle = fopen("sys/class/gpio14/value","w")) != NULL )
+    if( (sysfs_handle = fopen("sys/class/gpio/gpio14/value","w")) != NULL )
     {
         value = value ? 0 : 1;
 
@@ -32,15 +32,15 @@ void MainWindow::on_pushButton_clicked()
         fclose(sysfs_handle);
     }
 
-    if(value)
+    if(btnStatus)
     {
         ui->pushButton->setIcon(QPixmap(":/images/led-off.png"));
-        btnStatus = 1;
+        btnStatus = 0;
     }
     else
     {
         ui->pushButton->setIcon(QPixmap(":/images/led-on.png"));
-        btnStatus = 0;
+        btnStatus = 1;
     }
 }
 

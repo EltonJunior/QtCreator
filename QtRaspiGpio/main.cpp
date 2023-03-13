@@ -8,13 +8,13 @@ int main(int argc, char *argv[])
 
     FILE *sysfs_handle = NULL;
 
-    if( (sysfs_handle = fopen("sys/class/gpio14/export","w")) != NULL )
+    if( (sysfs_handle = fopen("sys/class/gpio/gpio14/export","w")) != NULL )
     {
         fwrite("3",sizeof(char),2,sysfs_handle);
         fclose(sysfs_handle);
     }
 
-    if( (sysfs_handle = fopen("sys/class/gpio14/direction","w")) != NULL )
+    if( (sysfs_handle = fopen("sys/class/gpio/gpio14/direction","w")) != NULL )
     {
         fwrite("out",sizeof(char),4,sysfs_handle);
         fclose(sysfs_handle);
