@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setenv("WIRINGPI_GPIOMEM", "1", 1);
     wiringPiSetup();
     pinMode(LedPin_1, OUTPUT);
     pinMode(LedPin_2, OUTPUT);

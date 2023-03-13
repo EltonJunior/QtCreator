@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#define LedPin_1 0
-#define LedPin_2 1
+#define LedPin_1 15
+#define LedPin_2 15
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
