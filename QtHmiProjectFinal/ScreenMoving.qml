@@ -82,10 +82,10 @@ Item {
 
         BikeImage {
             id: bikeImage
-            x:  0
-            y:  0
+            x:  -37
+            y:  -6
 
-            width: 100
+            width: 150
             visible: false
         }
     }
