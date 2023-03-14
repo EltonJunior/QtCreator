@@ -35,5 +35,8 @@
         <file>MainBackground.qml</file>
         <file>ScreenMoving.qml</file>
         <file>MapScreen.qml</file>
+        <file>images/right-arc-main-30-percent.png</file>
+        <file>images/right-arc-main-60-percent.png</file>
+        <file>images/right-arc-main-100-percent.png</file>
     </qresource>
 </RCC>

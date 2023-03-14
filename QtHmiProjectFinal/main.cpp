@@ -3,6 +3,8 @@
 #include <QTimeLine>
 #include <QQmlContext>
 #include "gpio.h"
+#include "animationtonumbers.h"
+#include "animationtomap.h"
 
 int main(int argc, char *argv[])
 {
@@ -14,6 +16,8 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     Gpio gpio15(15, GPIO_OUTPUT);
+    qmlRegisterType< AnimationToNumbers >("AnimationToNumbersClass", 1, 0, "AnimationToNumbers");
+    qmlRegisterType< AnimationToMap >("AnimationToMapClass", 1, 0, "AnimationToMap");
 
     QQmlContext* ctx = engine.rootContext();
     ctx->setContextProperty("output", &gpio15);
