@@ -4,8 +4,6 @@
 #include <QObject>
 #include <QtCore>
 
-#include "valueToPlotInMap.h"
-
 class AnimationToMap : public QObject
 {
     Q_OBJECT
